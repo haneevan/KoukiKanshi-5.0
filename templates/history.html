@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>稼働状況履歴 - 履歴</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/history.css') }}">
+</head>
+<body>
+    <div class="history-header">
+        <h1>稼働状況履歴 - 履歴</h1>
+        <div class="navigation-bar">
+                <a href="/" class="back-button"><i class="fas fa-arrow-left"></i>現状</a>
+                <div class="datetime-display">
+                <div id="current-date">Loading...</div>
+                <div id="current-time">Loading...</div>
+                </div>
+            </div>
+    </div>
+
+    <div class="history-container">
+        <div class="calendar-section">
+            <h2>日付選択</h2>
+            <input type="text" id="date-picker" placeholder="日付を選択">
+        </div>
+    </div>
+        <div class="machine-grid">
+            {% for machine in ['GRS_14', 'GRS_17', 'GRS_19'] %}
+            <div class="machine-card" id="{{ machine }}-history-card">
+                <div class="machine-header">
+                    <h2 class="machine-title">{{ machine }}</h2>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-header">
+                        <span>06:00</span>
+                        <span>09:00</span>
+                        <span>12:00</span>
+                        <span>15:00</span>
+                        <span>18:00</span>
+                    </div>
+                    <div class="timeline-bar" id="{{ machine }}-timeline"></div>
+                </div>
+                <div class="status-summary">
+                    <div class="status-item">
+                        <span class="status-label">停止時間:</span>
+                        <span class="status-value" id="{{ machine }}-off-time">00:00:00</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">準備時間:</span>
+                        <span class="status-value" id="{{ machine }}-prep-time">00:00:00</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">加工時間:</span>
+                        <span class="status-value" id="{{ machine }}-on-time">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="{{ url_for('static', filename='js/history.js') }}"></script>
+</body>
+</html>

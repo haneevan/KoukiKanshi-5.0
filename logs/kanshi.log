@@ -1,0 +1,1382 @@
+2025-05-22 13:17:05,880 - Kanshi - INFO - RPi.GPIO imported successfully. Running on Raspberry Pi.
+2025-05-22 13:17:05,888 - Kanshi - INFO - Starting Kanshi application.
+2025-05-22 13:17:05,970 - Kanshi - INFO - Database initialized.
+2025-05-22 13:17:05,975 - Kanshi - INFO - GPIO pins set up.
+2025-05-22 13:17:05,976 - Kanshi - INFO - Starting periodic GPIO polling.
+2025-05-22 13:17:05,980 - Kanshi - INFO - [GRS_14] Initializing state to Prep at 2025-05-22T13:17:05.978479
+2025-05-22 13:17:06,018 - Kanshi - INFO - [GRS_17] Initializing state to Prep at 2025-05-22T13:17:06.016588
+2025-05-22 13:17:06,045 - Kanshi - INFO - [GRS_19] Initializing state to Prep at 2025-05-22T13:17:06.044223
+2025-05-22 13:17:06,076 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:06,103 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:06,118 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:06,177 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.238:5000
+2025-05-22 13:17:06,178 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 13:17:13,012 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:13,015 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571660>]
+2025-05-22 13:17:13,017 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:13,018 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:13,019 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:13,020 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:13,022 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:13,023 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:13,025 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:13,026 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:13,027 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:13,028 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:13,029 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:13,030 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:13,031 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:13,032 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:13,032 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:13,033 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:13,034 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:13,034 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:13,035 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:13,036 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:13,037 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:13,038 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:13,039 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:13,039 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:13,040 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:13,041 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:13,042 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:13,043 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:13,045 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:13,046 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:13,046 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:13,047 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:13,048 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:13,049 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:13,050 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:13,051 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:13,052 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:13,053 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:13,054 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:13,054 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:13,055 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:13,056 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:13,056 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:13,056 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:13,057 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:13,057 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:13,058 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:13,059 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:13,060 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:13,060 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:13,062 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:13,062 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:13,063 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:13,063 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:13,064 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:13,065 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:13,066 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:13,067 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:13,068 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:13,069 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:13,069 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:13,070 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:13,072 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571780>]
+2025-05-22 13:17:13,073 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:13,074 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:13,075 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:13,075 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:13,076 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:13,077 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:13,077 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:13,078 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:13,078 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:13,079 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:13,080 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:13,081 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:13,082 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:13,082 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:13,083 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:13,084 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:13,085 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:13,086 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:13,087 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:13,088 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:13,090 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:13,091 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:13,092 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:13,093 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:13,095 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:13,097 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:13,098 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:13,098 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:13,099 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:13,100 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:13,100 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:13,101 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:13,101 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:13,102 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:13,102 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:13,103 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:13,104 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:13,104 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:13,105 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:13,105 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:13,106 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:13,106 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:13,107 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:13,107 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:13,108 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:13,109 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:13,109 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:13,110 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:13,110 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:13,111 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:13,111 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:13,112 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:13,113 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:13,114 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:13,114 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:13,115 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:13,115 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:13,116 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:13,117 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:13,117 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:13,118 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:13,118 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:13,121 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571690>]
+2025-05-22 13:17:13,124 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:13,125 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:13,126 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:13,127 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:13,130 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:13,131 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:13,132 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:13,133 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:13,133 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:13,134 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:13,134 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:13,135 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:13,136 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:13,137 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:13,138 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:13,138 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:13,138 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:13,139 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:13,139 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:13,139 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:13,140 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:13,140 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:13,141 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:13,141 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:13,141 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:13,142 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:13,142 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:13,142 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:13,143 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:13,143 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:13,144 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:13,144 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:13,145 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:13,145 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:13,146 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:13,146 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:13,147 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:13,148 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:13,149 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:13,149 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:13,150 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:13,150 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:13,151 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:13,152 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:13,152 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:13,153 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:13,154 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:13,155 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:13,156 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:13,158 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:13,159 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:13,160 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:13,161 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:13,163 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:13,164 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:13,165 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:13,166 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:13,167 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:13,167 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:13,168 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:13,168 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:13,169 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:13,226 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:13] "GET / HTTP/1.1" 200 -
+2025-05-22 13:17:13,336 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:13] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2025-05-22 13:17:13,338 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:13] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+2025-05-22 13:17:13,398 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:13,415 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:13,431 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:13,453 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:13,457 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571b70>]
+2025-05-22 13:17:13,458 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:13,459 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:13,461 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:13,462 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:13,463 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:13,465 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:13,466 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:13,468 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:13,469 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:13,470 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:13,471 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:13,471 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:13,472 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:13,472 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:13,473 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:13,473 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:13,473 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:13,474 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:13,474 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:13,475 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:13,475 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:13,476 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:13,476 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:13,477 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:13,477 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:13,480 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:13,481 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:13,482 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:13,482 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:13,483 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:13,483 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:13,484 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:13,485 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:13,488 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:13,489 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:13,490 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:13,490 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:13,491 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:13,492 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:13,492 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:13,493 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:13,493 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:13,493 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:13,494 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:13,494 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:13,495 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:13,496 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:13,497 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:13,497 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:13,498 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:13,498 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:13,499 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:13,500 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:13,501 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:13,502 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:13,503 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:13,505 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:13,507 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:13,508 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:13,509 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:13,511 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:13,512 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:13,517 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572a10>]
+2025-05-22 13:17:13,519 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:13,520 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:13,521 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:13,521 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:13,522 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:13,523 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:13,524 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:13,525 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:13,526 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:13,526 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:13,527 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:13,527 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:13,528 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:13,529 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:13,530 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:13,531 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:13,532 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:13,533 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:13,534 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:13,535 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:13,535 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:13,536 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:13,537 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:13,538 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:13,538 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:13,539 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:13,540 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:13,541 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:13,542 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:13,543 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:13,544 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:13,545 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:13,547 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:13,549 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:13,550 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:13,552 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:13,554 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:13,555 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:13,556 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:13,556 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:13,557 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:13,558 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:13,559 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:13,559 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:13,560 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:13,561 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:13,563 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:13,564 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:13,565 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:13,566 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:13,567 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:13,568 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:13,569 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:13,569 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:13,570 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:13,571 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:13,573 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:13,574 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:13,574 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:13,576 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:13,577 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:13,578 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:13,582 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571300>]
+2025-05-22 13:17:13,585 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:13,586 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:13,587 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:13,588 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:13,589 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:13,590 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:13,590 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:13,591 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:13,592 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:13,595 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:13,596 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:13,597 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:13,598 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:13,599 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:13,600 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:13,602 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:13,602 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:13,603 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:13,604 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:13,604 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:13,605 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:13,607 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:13,608 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:13,610 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:13,612 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:13,613 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:13,614 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:13,615 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:13,616 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:13,618 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:13,619 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:13,620 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:13,621 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:13,622 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:13,625 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:13,626 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:13,627 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:13,628 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:13,628 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:13,629 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:13,629 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:13,630 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:13,631 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:13,631 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:13,632 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:13,632 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:13,633 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:13,633 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:13,634 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:13,634 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:13,635 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:13,636 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:13,636 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:13,637 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:13,637 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:13,638 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:13,639 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:13,640 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:13,640 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:13,641 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:13,641 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:13,642 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:13,645 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:13] "GET /update_conditions HTTP/1.1" 200 -
+2025-05-22 13:17:16,139 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:16,157 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:16,173 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:18,407 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:18,424 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:18,441 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:18,465 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:18,467 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571180>]
+2025-05-22 13:17:18,469 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:18,470 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:18,471 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:18,472 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:18,473 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:18,473 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:18,474 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:18,475 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:18,476 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:18,477 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:18,478 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:18,479 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:18,481 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:18,482 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:18,483 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:18,484 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:18,486 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:18,489 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:18,490 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:18,490 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:18,491 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:18,492 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:18,493 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:18,494 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:18,494 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:18,495 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:18,496 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:18,496 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:18,496 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:18,497 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:18,497 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:18,497 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:18,497 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:18,498 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:18,498 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:18,499 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:18,500 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:18,500 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:18,500 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:18,501 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:18,501 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:18,502 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:18,502 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:18,503 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:18,503 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:18,504 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:18,505 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:18,505 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:18,506 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:18,506 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:18,507 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:18,508 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:18,509 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:18,509 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:18,510 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:18,511 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:18,512 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:18,513 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:18,515 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:18,516 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:18,517 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:18,517 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:18,522 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f885737c0>]
+2025-05-22 13:17:18,524 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:18,525 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:18,526 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:18,527 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:18,528 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:18,529 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:18,530 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:18,530 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:18,531 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:18,532 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:18,533 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:18,533 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:18,534 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:18,534 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:18,535 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:18,535 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:18,536 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:18,536 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:18,537 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:18,537 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:18,538 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:18,539 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:18,539 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:18,540 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:18,540 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:18,540 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:18,541 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:18,541 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:18,542 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:18,542 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:18,543 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:18,544 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:18,545 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:18,547 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:18,548 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:18,549 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:18,550 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:18,552 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:18,554 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:18,554 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:18,555 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:18,556 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:18,557 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:18,557 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:18,558 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:18,559 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:18,560 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:18,560 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:18,561 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:18,562 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:18,563 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:18,563 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:18,565 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:18,565 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:18,566 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:18,568 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:18,568 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:18,569 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:18,570 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:18,571 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:18,572 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:18,573 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:18,576 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572a10>]
+2025-05-22 13:17:18,578 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:18,579 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:18,580 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:18,581 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:18,583 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:18,585 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:18,587 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:18,588 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:18,589 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:18,590 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:18,593 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:18,594 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:18,595 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:18,597 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:18,598 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:18,599 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:18,600 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:18,601 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:18,603 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:18,603 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:18,605 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:18,605 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:18,606 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:18,608 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:18,611 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:18,613 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:18,614 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:18,615 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:18,618 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:18,619 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:18,620 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:18,621 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:18,622 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:18,623 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:18,625 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:18,626 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:18,627 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:18,628 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:18,631 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:18,633 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:18,633 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:18,634 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:18,634 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:18,635 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:18,636 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:18,636 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:18,637 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:18,637 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:18,638 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:18,639 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:18,639 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:18,640 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:18,640 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:18,641 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:18,642 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:18,642 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:18,643 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:18,643 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:18,644 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:18,645 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:18,645 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:18,646 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:18,649 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:18] "GET /update_conditions HTTP/1.1" 200 -
+2025-05-22 13:17:23,442 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:23,466 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:23,483 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:23,512 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:23,516 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571db0>]
+2025-05-22 13:17:23,519 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:23,521 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:23,524 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:23,525 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:23,527 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:23,528 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:23,529 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:23,531 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:23,532 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:23,534 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:23,536 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:23,537 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:23,538 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:23,539 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:23,541 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:23,542 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:23,543 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:23,546 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:23,548 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:23,549 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:23,550 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:23,551 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:23,554 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:23,556 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:23,558 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:23,560 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:23,561 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:23,562 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:23,563 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:23,567 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:23,568 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:23,570 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:23,571 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:23,572 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:23,573 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:23,574 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:23,576 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:23,576 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:23,577 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:23,577 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:23,578 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:23,579 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:23,580 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:23,580 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:23,581 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:23,582 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:23,583 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:23,584 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:23,585 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:23,587 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:23,588 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:23,590 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:23,590 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:23,591 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:23,592 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:23,593 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:23,595 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:23,597 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:23,598 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:23,599 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:23,600 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:23,601 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:23,604 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88573850>]
+2025-05-22 13:17:23,605 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:23,606 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:23,607 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:23,608 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:23,610 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:23,611 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:23,612 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:23,613 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:23,613 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:23,620 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:23,622 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:23,623 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:23,625 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:23,626 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:23,628 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:23,629 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:23,630 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:23,631 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:23,633 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:23,634 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:23,635 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:23,636 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:23,637 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:23,640 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:23,641 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:23,641 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:23,642 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:23,643 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:23,644 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:23,646 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:23,646 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:23,647 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:23,648 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:23,649 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:23,650 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:23,651 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:23,653 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:23,654 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:23,655 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:23,656 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:23,657 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:23,658 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:23,660 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:23,661 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:23,662 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:23,663 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:23,663 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:23,664 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:23,664 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:23,665 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:23,666 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:23,666 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:23,667 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:23,667 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:23,668 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:23,668 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:23,669 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:23,669 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:23,670 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:23,670 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:23,671 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:23,671 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:23,673 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f885737c0>]
+2025-05-22 13:17:23,674 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:23,675 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:23,676 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:23,677 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:23,678 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:23,679 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:23,679 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:23,680 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:23,680 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:23,680 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:23,681 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:23,682 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:23,682 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:23,683 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:23,684 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:23,685 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:23,685 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:23,686 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:23,688 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:23,689 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:23,689 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:23,690 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:23,690 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:23,691 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:23,691 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:23,692 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:23,692 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:23,693 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:23,693 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:23,694 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:23,694 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:23,695 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:23,695 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:23,695 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:23,696 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:23,697 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:23,697 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:23,698 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:23,699 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:23,700 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:23,701 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:23,703 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:23,705 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:23,706 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:23,706 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:23,707 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:23,707 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:23,708 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:23,709 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:23,709 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:23,709 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:23,710 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:23,711 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:23,711 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:23,712 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:23,713 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:23,714 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:23,714 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:23,715 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:23,715 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:23,716 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:23,717 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:23,720 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:23] "GET /update_conditions HTTP/1.1" 200 -
+2025-05-22 13:17:26,192 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:26,209 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:26,223 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:28,430 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:28,445 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:28,464 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:28,491 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:28,495 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88571600>]
+2025-05-22 13:17:28,497 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:28,500 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:28,502 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:28,504 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:28,507 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:28,509 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:28,510 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:28,512 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:28,513 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:28,514 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:28,514 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:28,515 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:28,515 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:28,516 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:28,516 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:28,517 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:28,517 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:28,518 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:28,518 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:28,519 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:28,519 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:28,520 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:28,521 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:28,521 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:28,522 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:28,522 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:28,523 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:28,523 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:28,524 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:28,524 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:28,525 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:28,525 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:28,526 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:28,527 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:28,528 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:28,531 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:28,532 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:28,533 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:28,534 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:28,534 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:28,535 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:28,536 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:28,537 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:28,537 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:28,538 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:28,538 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:28,539 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:28,540 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:28,541 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:28,542 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:28,542 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:28,543 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:28,543 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:28,544 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:28,545 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:28,545 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:28,546 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:28,546 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:28,547 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:28,549 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:28,551 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:28,552 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:28,556 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572a70>]
+2025-05-22 13:17:28,558 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:28,560 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:28,562 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:28,563 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:28,565 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:28,566 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:28,567 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:28,567 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:28,568 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:28,569 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:28,569 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:28,570 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:28,571 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:28,572 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:28,573 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:28,573 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:28,574 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:28,575 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:28,576 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:28,577 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:28,578 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:28,578 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:28,579 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:28,581 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:28,582 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:28,584 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:28,585 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:28,586 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:28,587 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:28,589 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:28,590 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:28,591 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:28,593 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:28,594 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:28,597 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:28,598 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:28,599 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:28,600 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:28,601 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:28,604 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:28,606 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:28,607 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:28,609 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:28,610 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:28,612 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:28,614 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:28,615 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:28,616 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:28,617 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:28,619 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:28,621 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:28,622 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:28,624 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:28,624 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:28,625 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:28,626 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:28,626 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:28,627 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:28,628 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:28,628 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:28,629 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:28,629 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:28,632 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88573850>]
+2025-05-22 13:17:28,634 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:28,635 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:28,637 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:28,638 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:28,639 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:28,640 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:28,642 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:28,643 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:28,645 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:28,646 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:28,648 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:28,649 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:28,650 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:28,652 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:28,654 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:28,656 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:28,658 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:28,659 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:28,661 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:28,662 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:28,664 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:28,665 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:28,668 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:28,669 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:28,671 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:28,673 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:28,674 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:28,675 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:28,676 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:28,677 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:28,678 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:28,679 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:28,680 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:28,681 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:28,682 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:28,683 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:28,684 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:28,685 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:28,686 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:28,686 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:28,687 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:28,689 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:28,690 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:28,691 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:28,693 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:28,694 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:28,695 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:28,697 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:28,698 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:28,700 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:28,701 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:28,702 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:28,703 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:28,704 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:28,704 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:28,705 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:28,705 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:28,707 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:28,709 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:28,710 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:28,711 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:28,711 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:28,715 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:28] "GET /update_conditions HTTP/1.1" 200 -
+2025-05-22 13:17:33,441 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:33,458 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:33,471 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:33,496 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:33,500 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f885737f0>]
+2025-05-22 13:17:33,503 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:33,504 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:33,505 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:33,505 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:33,506 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:33,507 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:33,508 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:33,508 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:33,509 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:33,509 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:33,510 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:33,511 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:33,511 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:33,512 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:33,512 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:33,512 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:33,513 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:33,513 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:33,514 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:33,516 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:33,517 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:33,518 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:33,519 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:33,520 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:33,522 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:33,523 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:33,524 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:33,526 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:33,527 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:33,528 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:33,528 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:33,529 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:33,529 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:33,530 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:33,530 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:33,531 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:33,532 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:33,532 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:33,533 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:33,534 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:33,534 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:33,535 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:33,535 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:33,536 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:33,540 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:33,541 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:33,541 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:33,542 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:33,542 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:33,543 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:33,544 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:33,544 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:33,545 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:33,546 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:33,546 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:33,547 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:33,548 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:33,549 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:33,549 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:33,549 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:33,550 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:33,550 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:33,553 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572860>]
+2025-05-22 13:17:33,555 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:33,558 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:33,561 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:33,562 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:33,564 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:33,565 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:33,566 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:33,567 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:33,567 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:33,568 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:33,569 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:33,569 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:33,570 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:33,570 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:33,571 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:33,571 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:33,572 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:33,572 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:33,573 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:33,573 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:33,574 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:33,574 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:33,575 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:33,575 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:33,576 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:33,577 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:33,577 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:33,578 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:33,579 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:33,580 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:33,581 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:33,582 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:33,583 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:33,584 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:33,585 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:33,586 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:33,587 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:33,589 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:33,590 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:33,591 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:33,592 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:33,594 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:33,596 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:33,597 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:33,598 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:33,599 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:33,599 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:33,600 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:33,601 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:33,602 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:33,602 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:33,603 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:33,604 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:33,605 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:33,606 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:33,607 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:33,608 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:33,609 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:33,609 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:33,610 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:33,611 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:33,612 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:33,615 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572a70>]
+2025-05-22 13:17:33,616 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:33,618 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:33,620 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:33,621 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:33,623 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:33,625 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:33,626 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:33,627 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:33,630 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:33,631 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:33,632 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:33,633 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:33,635 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:33,636 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:33,637 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:33,638 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:33,639 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:33,640 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:33,642 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:33,643 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:33,644 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:33,645 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:33,645 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:33,646 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:33,646 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:33,647 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:33,648 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:33,648 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:33,649 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:33,649 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:33,650 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:33,650 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:33,651 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:33,651 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:33,652 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:33,653 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:33,653 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:33,654 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:33,654 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:33,655 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:33,655 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:33,656 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:33,657 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:33,657 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:33,658 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:33,660 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:33,661 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:33,663 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:33,664 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:33,666 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:33,668 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:33,669 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:33,671 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:33,674 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:33,676 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:33,676 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:33,677 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:33,678 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:33,678 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:33,679 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:33,679 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:33,680 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:33,684 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:33] "GET /update_conditions HTTP/1.1" 200 -
+2025-05-22 13:17:36,243 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:36,258 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:36,274 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:38,694 - Kanshi - DEBUG - [GRS_14] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:38,708 - Kanshi - DEBUG - [GRS_17] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:38,723 - Kanshi - DEBUG - [GRS_19] Status Prep unchanged. Updating current_start_time for continuous tracking.
+2025-05-22 13:17:38,746 - Kanshi - DEBUG - Generating timeline data for machines: ['GRS_14', 'GRS_17', 'GRS_19']
+2025-05-22 13:17:38,749 - Kanshi - DEBUG - [GRS_14] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572aa0>]
+2025-05-22 13:17:38,751 - Kanshi - DEBUG - [GRS_14] Initial state at 6 AM: unknown
+2025-05-22 13:17:38,753 - Kanshi - DEBUG - [GRS_14] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:38,755 - Kanshi - DEBUG - [GRS_14] Added event to processed_events_for_timeline: (2025-05-22 13:17:05.978479, Prep)
+2025-05-22 13:17:38,756 - Kanshi - DEBUG - [GRS_14] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 5, 978479), 'Prep')]
+2025-05-22 13:17:38,758 - Kanshi - DEBUG - [GRS_14] Live slot (13:15): current_prep
+2025-05-22 13:17:38,759 - Kanshi - DEBUG - [GRS_14] Future slot (13:20): blank
+2025-05-22 13:17:38,760 - Kanshi - DEBUG - [GRS_14] Future slot (13:25): blank
+2025-05-22 13:17:38,761 - Kanshi - DEBUG - [GRS_14] Future slot (13:30): blank
+2025-05-22 13:17:38,762 - Kanshi - DEBUG - [GRS_14] Future slot (13:35): blank
+2025-05-22 13:17:38,762 - Kanshi - DEBUG - [GRS_14] Future slot (13:40): blank
+2025-05-22 13:17:38,763 - Kanshi - DEBUG - [GRS_14] Future slot (13:45): blank
+2025-05-22 13:17:38,764 - Kanshi - DEBUG - [GRS_14] Future slot (13:50): blank
+2025-05-22 13:17:38,765 - Kanshi - DEBUG - [GRS_14] Future slot (13:55): blank
+2025-05-22 13:17:38,766 - Kanshi - DEBUG - [GRS_14] Future slot (14:00): blank
+2025-05-22 13:17:38,767 - Kanshi - DEBUG - [GRS_14] Future slot (14:05): blank
+2025-05-22 13:17:38,768 - Kanshi - DEBUG - [GRS_14] Future slot (14:10): blank
+2025-05-22 13:17:38,769 - Kanshi - DEBUG - [GRS_14] Future slot (14:15): blank
+2025-05-22 13:17:38,770 - Kanshi - DEBUG - [GRS_14] Future slot (14:20): blank
+2025-05-22 13:17:38,770 - Kanshi - DEBUG - [GRS_14] Future slot (14:25): blank
+2025-05-22 13:17:38,771 - Kanshi - DEBUG - [GRS_14] Future slot (14:30): blank
+2025-05-22 13:17:38,772 - Kanshi - DEBUG - [GRS_14] Future slot (14:35): blank
+2025-05-22 13:17:38,773 - Kanshi - DEBUG - [GRS_14] Future slot (14:40): blank
+2025-05-22 13:17:38,774 - Kanshi - DEBUG - [GRS_14] Future slot (14:45): blank
+2025-05-22 13:17:38,775 - Kanshi - DEBUG - [GRS_14] Future slot (14:50): blank
+2025-05-22 13:17:38,777 - Kanshi - DEBUG - [GRS_14] Future slot (14:55): blank
+2025-05-22 13:17:38,778 - Kanshi - DEBUG - [GRS_14] Future slot (15:00): blank
+2025-05-22 13:17:38,779 - Kanshi - DEBUG - [GRS_14] Future slot (15:05): blank
+2025-05-22 13:17:38,781 - Kanshi - DEBUG - [GRS_14] Future slot (15:10): blank
+2025-05-22 13:17:38,782 - Kanshi - DEBUG - [GRS_14] Future slot (15:15): blank
+2025-05-22 13:17:38,783 - Kanshi - DEBUG - [GRS_14] Future slot (15:20): blank
+2025-05-22 13:17:38,785 - Kanshi - DEBUG - [GRS_14] Future slot (15:25): blank
+2025-05-22 13:17:38,788 - Kanshi - DEBUG - [GRS_14] Future slot (15:30): blank
+2025-05-22 13:17:38,790 - Kanshi - DEBUG - [GRS_14] Future slot (15:35): blank
+2025-05-22 13:17:38,790 - Kanshi - DEBUG - [GRS_14] Future slot (15:40): blank
+2025-05-22 13:17:38,791 - Kanshi - DEBUG - [GRS_14] Future slot (15:45): blank
+2025-05-22 13:17:38,792 - Kanshi - DEBUG - [GRS_14] Future slot (15:50): blank
+2025-05-22 13:17:38,793 - Kanshi - DEBUG - [GRS_14] Future slot (15:55): blank
+2025-05-22 13:17:38,794 - Kanshi - DEBUG - [GRS_14] Future slot (16:00): blank
+2025-05-22 13:17:38,795 - Kanshi - DEBUG - [GRS_14] Future slot (16:05): blank
+2025-05-22 13:17:38,796 - Kanshi - DEBUG - [GRS_14] Future slot (16:10): blank
+2025-05-22 13:17:38,798 - Kanshi - DEBUG - [GRS_14] Future slot (16:15): blank
+2025-05-22 13:17:38,799 - Kanshi - DEBUG - [GRS_14] Future slot (16:20): blank
+2025-05-22 13:17:38,800 - Kanshi - DEBUG - [GRS_14] Future slot (16:25): blank
+2025-05-22 13:17:38,801 - Kanshi - DEBUG - [GRS_14] Future slot (16:30): blank
+2025-05-22 13:17:38,802 - Kanshi - DEBUG - [GRS_14] Future slot (16:35): blank
+2025-05-22 13:17:38,803 - Kanshi - DEBUG - [GRS_14] Future slot (16:40): blank
+2025-05-22 13:17:38,805 - Kanshi - DEBUG - [GRS_14] Future slot (16:45): blank
+2025-05-22 13:17:38,806 - Kanshi - DEBUG - [GRS_14] Future slot (16:50): blank
+2025-05-22 13:17:38,806 - Kanshi - DEBUG - [GRS_14] Future slot (16:55): blank
+2025-05-22 13:17:38,807 - Kanshi - DEBUG - [GRS_14] Future slot (17:00): blank
+2025-05-22 13:17:38,808 - Kanshi - DEBUG - [GRS_14] Future slot (17:05): blank
+2025-05-22 13:17:38,810 - Kanshi - DEBUG - [GRS_14] Future slot (17:10): blank
+2025-05-22 13:17:38,811 - Kanshi - DEBUG - [GRS_14] Future slot (17:15): blank
+2025-05-22 13:17:38,812 - Kanshi - DEBUG - [GRS_14] Future slot (17:20): blank
+2025-05-22 13:17:38,813 - Kanshi - DEBUG - [GRS_14] Future slot (17:25): blank
+2025-05-22 13:17:38,815 - Kanshi - DEBUG - [GRS_14] Future slot (17:30): blank
+2025-05-22 13:17:38,816 - Kanshi - DEBUG - [GRS_14] Future slot (17:35): blank
+2025-05-22 13:17:38,817 - Kanshi - DEBUG - [GRS_14] Future slot (17:40): blank
+2025-05-22 13:17:38,818 - Kanshi - DEBUG - [GRS_14] Future slot (17:45): blank
+2025-05-22 13:17:38,819 - Kanshi - DEBUG - [GRS_14] Future slot (17:50): blank
+2025-05-22 13:17:38,820 - Kanshi - DEBUG - [GRS_14] Future slot (17:55): blank
+2025-05-22 13:17:38,822 - Kanshi - DEBUG - [GRS_14] Final timeline length: 144
+2025-05-22 13:17:38,827 - Kanshi - DEBUG - [GRS_17] Raw events fetched from DB: [<sqlite3.Row object at 0x7f885739a0>]
+2025-05-22 13:17:38,829 - Kanshi - DEBUG - [GRS_17] Initial state at 6 AM: unknown
+2025-05-22 13:17:38,830 - Kanshi - DEBUG - [GRS_17] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:38,831 - Kanshi - DEBUG - [GRS_17] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.016588, Prep)
+2025-05-22 13:17:38,832 - Kanshi - DEBUG - [GRS_17] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 16588), 'Prep')]
+2025-05-22 13:17:38,834 - Kanshi - DEBUG - [GRS_17] Live slot (13:15): current_prep
+2025-05-22 13:17:38,835 - Kanshi - DEBUG - [GRS_17] Future slot (13:20): blank
+2025-05-22 13:17:38,836 - Kanshi - DEBUG - [GRS_17] Future slot (13:25): blank
+2025-05-22 13:17:38,836 - Kanshi - DEBUG - [GRS_17] Future slot (13:30): blank
+2025-05-22 13:17:38,837 - Kanshi - DEBUG - [GRS_17] Future slot (13:35): blank
+2025-05-22 13:17:38,838 - Kanshi - DEBUG - [GRS_17] Future slot (13:40): blank
+2025-05-22 13:17:38,839 - Kanshi - DEBUG - [GRS_17] Future slot (13:45): blank
+2025-05-22 13:17:38,840 - Kanshi - DEBUG - [GRS_17] Future slot (13:50): blank
+2025-05-22 13:17:38,841 - Kanshi - DEBUG - [GRS_17] Future slot (13:55): blank
+2025-05-22 13:17:38,842 - Kanshi - DEBUG - [GRS_17] Future slot (14:00): blank
+2025-05-22 13:17:38,843 - Kanshi - DEBUG - [GRS_17] Future slot (14:05): blank
+2025-05-22 13:17:38,845 - Kanshi - DEBUG - [GRS_17] Future slot (14:10): blank
+2025-05-22 13:17:38,846 - Kanshi - DEBUG - [GRS_17] Future slot (14:15): blank
+2025-05-22 13:17:38,847 - Kanshi - DEBUG - [GRS_17] Future slot (14:20): blank
+2025-05-22 13:17:38,849 - Kanshi - DEBUG - [GRS_17] Future slot (14:25): blank
+2025-05-22 13:17:38,850 - Kanshi - DEBUG - [GRS_17] Future slot (14:30): blank
+2025-05-22 13:17:38,852 - Kanshi - DEBUG - [GRS_17] Future slot (14:35): blank
+2025-05-22 13:17:38,853 - Kanshi - DEBUG - [GRS_17] Future slot (14:40): blank
+2025-05-22 13:17:38,855 - Kanshi - DEBUG - [GRS_17] Future slot (14:45): blank
+2025-05-22 13:17:38,857 - Kanshi - DEBUG - [GRS_17] Future slot (14:50): blank
+2025-05-22 13:17:38,859 - Kanshi - DEBUG - [GRS_17] Future slot (14:55): blank
+2025-05-22 13:17:38,860 - Kanshi - DEBUG - [GRS_17] Future slot (15:00): blank
+2025-05-22 13:17:38,862 - Kanshi - DEBUG - [GRS_17] Future slot (15:05): blank
+2025-05-22 13:17:38,864 - Kanshi - DEBUG - [GRS_17] Future slot (15:10): blank
+2025-05-22 13:17:38,867 - Kanshi - DEBUG - [GRS_17] Future slot (15:15): blank
+2025-05-22 13:17:38,868 - Kanshi - DEBUG - [GRS_17] Future slot (15:20): blank
+2025-05-22 13:17:38,869 - Kanshi - DEBUG - [GRS_17] Future slot (15:25): blank
+2025-05-22 13:17:38,870 - Kanshi - DEBUG - [GRS_17] Future slot (15:30): blank
+2025-05-22 13:17:38,871 - Kanshi - DEBUG - [GRS_17] Future slot (15:35): blank
+2025-05-22 13:17:38,872 - Kanshi - DEBUG - [GRS_17] Future slot (15:40): blank
+2025-05-22 13:17:38,873 - Kanshi - DEBUG - [GRS_17] Future slot (15:45): blank
+2025-05-22 13:17:38,879 - Kanshi - DEBUG - [GRS_17] Future slot (15:50): blank
+2025-05-22 13:17:38,880 - Kanshi - DEBUG - [GRS_17] Future slot (15:55): blank
+2025-05-22 13:17:38,881 - Kanshi - DEBUG - [GRS_17] Future slot (16:00): blank
+2025-05-22 13:17:38,882 - Kanshi - DEBUG - [GRS_17] Future slot (16:05): blank
+2025-05-22 13:17:38,883 - Kanshi - DEBUG - [GRS_17] Future slot (16:10): blank
+2025-05-22 13:17:38,884 - Kanshi - DEBUG - [GRS_17] Future slot (16:15): blank
+2025-05-22 13:17:38,885 - Kanshi - DEBUG - [GRS_17] Future slot (16:20): blank
+2025-05-22 13:17:38,886 - Kanshi - DEBUG - [GRS_17] Future slot (16:25): blank
+2025-05-22 13:17:38,888 - Kanshi - DEBUG - [GRS_17] Future slot (16:30): blank
+2025-05-22 13:17:38,890 - Kanshi - DEBUG - [GRS_17] Future slot (16:35): blank
+2025-05-22 13:17:38,892 - Kanshi - DEBUG - [GRS_17] Future slot (16:40): blank
+2025-05-22 13:17:38,894 - Kanshi - DEBUG - [GRS_17] Future slot (16:45): blank
+2025-05-22 13:17:38,896 - Kanshi - DEBUG - [GRS_17] Future slot (16:50): blank
+2025-05-22 13:17:38,897 - Kanshi - DEBUG - [GRS_17] Future slot (16:55): blank
+2025-05-22 13:17:38,900 - Kanshi - DEBUG - [GRS_17] Future slot (17:00): blank
+2025-05-22 13:17:38,902 - Kanshi - DEBUG - [GRS_17] Future slot (17:05): blank
+2025-05-22 13:17:38,903 - Kanshi - DEBUG - [GRS_17] Future slot (17:10): blank
+2025-05-22 13:17:38,904 - Kanshi - DEBUG - [GRS_17] Future slot (17:15): blank
+2025-05-22 13:17:38,905 - Kanshi - DEBUG - [GRS_17] Future slot (17:20): blank
+2025-05-22 13:17:38,908 - Kanshi - DEBUG - [GRS_17] Future slot (17:25): blank
+2025-05-22 13:17:38,910 - Kanshi - DEBUG - [GRS_17] Future slot (17:30): blank
+2025-05-22 13:17:38,911 - Kanshi - DEBUG - [GRS_17] Future slot (17:35): blank
+2025-05-22 13:17:38,912 - Kanshi - DEBUG - [GRS_17] Future slot (17:40): blank
+2025-05-22 13:17:38,915 - Kanshi - DEBUG - [GRS_17] Future slot (17:45): blank
+2025-05-22 13:17:38,916 - Kanshi - DEBUG - [GRS_17] Future slot (17:50): blank
+2025-05-22 13:17:38,917 - Kanshi - DEBUG - [GRS_17] Future slot (17:55): blank
+2025-05-22 13:17:38,918 - Kanshi - DEBUG - [GRS_17] Final timeline length: 144
+2025-05-22 13:17:38,920 - Kanshi - DEBUG - [GRS_19] Raw events fetched from DB: [<sqlite3.Row object at 0x7f88572860>]
+2025-05-22 13:17:38,922 - Kanshi - DEBUG - [GRS_19] Initial state at 6 AM: unknown
+2025-05-22 13:17:38,923 - Kanshi - DEBUG - [GRS_19] Populating processed_events_for_timeline with initial state: (datetime.datetime(2025, 5, 22, 6, 0), 'unknown')
+2025-05-22 13:17:38,924 - Kanshi - DEBUG - [GRS_19] Added event to processed_events_for_timeline: (2025-05-22 13:17:06.044223, Prep)
+2025-05-22 13:17:38,925 - Kanshi - DEBUG - [GRS_19] Final processed_events_for_timeline (after adding DB events): [(datetime.datetime(2025, 5, 22, 6, 0), 'unknown'), (datetime.datetime(2025, 5, 22, 13, 17, 6, 44223), 'Prep')]
+2025-05-22 13:17:38,927 - Kanshi - DEBUG - [GRS_19] Live slot (13:15): current_prep
+2025-05-22 13:17:38,928 - Kanshi - DEBUG - [GRS_19] Future slot (13:20): blank
+2025-05-22 13:17:38,929 - Kanshi - DEBUG - [GRS_19] Future slot (13:25): blank
+2025-05-22 13:17:38,930 - Kanshi - DEBUG - [GRS_19] Future slot (13:30): blank
+2025-05-22 13:17:38,931 - Kanshi - DEBUG - [GRS_19] Future slot (13:35): blank
+2025-05-22 13:17:38,932 - Kanshi - DEBUG - [GRS_19] Future slot (13:40): blank
+2025-05-22 13:17:38,934 - Kanshi - DEBUG - [GRS_19] Future slot (13:45): blank
+2025-05-22 13:17:38,935 - Kanshi - DEBUG - [GRS_19] Future slot (13:50): blank
+2025-05-22 13:17:38,937 - Kanshi - DEBUG - [GRS_19] Future slot (13:55): blank
+2025-05-22 13:17:38,937 - Kanshi - DEBUG - [GRS_19] Future slot (14:00): blank
+2025-05-22 13:17:38,938 - Kanshi - DEBUG - [GRS_19] Future slot (14:05): blank
+2025-05-22 13:17:38,938 - Kanshi - DEBUG - [GRS_19] Future slot (14:10): blank
+2025-05-22 13:17:38,939 - Kanshi - DEBUG - [GRS_19] Future slot (14:15): blank
+2025-05-22 13:17:38,940 - Kanshi - DEBUG - [GRS_19] Future slot (14:20): blank
+2025-05-22 13:17:38,940 - Kanshi - DEBUG - [GRS_19] Future slot (14:25): blank
+2025-05-22 13:17:38,941 - Kanshi - DEBUG - [GRS_19] Future slot (14:30): blank
+2025-05-22 13:17:38,941 - Kanshi - DEBUG - [GRS_19] Future slot (14:35): blank
+2025-05-22 13:17:38,942 - Kanshi - DEBUG - [GRS_19] Future slot (14:40): blank
+2025-05-22 13:17:38,942 - Kanshi - DEBUG - [GRS_19] Future slot (14:45): blank
+2025-05-22 13:17:38,943 - Kanshi - DEBUG - [GRS_19] Future slot (14:50): blank
+2025-05-22 13:17:38,944 - Kanshi - DEBUG - [GRS_19] Future slot (14:55): blank
+2025-05-22 13:17:38,944 - Kanshi - DEBUG - [GRS_19] Future slot (15:00): blank
+2025-05-22 13:17:38,945 - Kanshi - DEBUG - [GRS_19] Future slot (15:05): blank
+2025-05-22 13:17:38,945 - Kanshi - DEBUG - [GRS_19] Future slot (15:10): blank
+2025-05-22 13:17:38,946 - Kanshi - DEBUG - [GRS_19] Future slot (15:15): blank
+2025-05-22 13:17:38,946 - Kanshi - DEBUG - [GRS_19] Future slot (15:20): blank
+2025-05-22 13:17:38,947 - Kanshi - DEBUG - [GRS_19] Future slot (15:25): blank
+2025-05-22 13:17:38,948 - Kanshi - DEBUG - [GRS_19] Future slot (15:30): blank
+2025-05-22 13:17:38,948 - Kanshi - DEBUG - [GRS_19] Future slot (15:35): blank
+2025-05-22 13:17:38,949 - Kanshi - DEBUG - [GRS_19] Future slot (15:40): blank
+2025-05-22 13:17:38,949 - Kanshi - DEBUG - [GRS_19] Future slot (15:45): blank
+2025-05-22 13:17:38,950 - Kanshi - DEBUG - [GRS_19] Future slot (15:50): blank
+2025-05-22 13:17:38,950 - Kanshi - DEBUG - [GRS_19] Future slot (15:55): blank
+2025-05-22 13:17:38,951 - Kanshi - DEBUG - [GRS_19] Future slot (16:00): blank
+2025-05-22 13:17:38,952 - Kanshi - DEBUG - [GRS_19] Future slot (16:05): blank
+2025-05-22 13:17:38,953 - Kanshi - DEBUG - [GRS_19] Future slot (16:10): blank
+2025-05-22 13:17:38,954 - Kanshi - DEBUG - [GRS_19] Future slot (16:15): blank
+2025-05-22 13:17:38,955 - Kanshi - DEBUG - [GRS_19] Future slot (16:20): blank
+2025-05-22 13:17:38,956 - Kanshi - DEBUG - [GRS_19] Future slot (16:25): blank
+2025-05-22 13:17:38,957 - Kanshi - DEBUG - [GRS_19] Future slot (16:30): blank
+2025-05-22 13:17:38,959 - Kanshi - DEBUG - [GRS_19] Future slot (16:35): blank
+2025-05-22 13:17:38,960 - Kanshi - DEBUG - [GRS_19] Future slot (16:40): blank
+2025-05-22 13:17:38,962 - Kanshi - DEBUG - [GRS_19] Future slot (16:45): blank
+2025-05-22 13:17:38,963 - Kanshi - DEBUG - [GRS_19] Future slot (16:50): blank
+2025-05-22 13:17:38,964 - Kanshi - DEBUG - [GRS_19] Future slot (16:55): blank
+2025-05-22 13:17:38,965 - Kanshi - DEBUG - [GRS_19] Future slot (17:00): blank
+2025-05-22 13:17:38,966 - Kanshi - DEBUG - [GRS_19] Future slot (17:05): blank
+2025-05-22 13:17:38,967 - Kanshi - DEBUG - [GRS_19] Future slot (17:10): blank
+2025-05-22 13:17:38,968 - Kanshi - DEBUG - [GRS_19] Future slot (17:15): blank
+2025-05-22 13:17:38,970 - Kanshi - DEBUG - [GRS_19] Future slot (17:20): blank
+2025-05-22 13:17:38,972 - Kanshi - DEBUG - [GRS_19] Future slot (17:25): blank
+2025-05-22 13:17:38,972 - Kanshi - DEBUG - [GRS_19] Future slot (17:30): blank
+2025-05-22 13:17:38,973 - Kanshi - DEBUG - [GRS_19] Future slot (17:35): blank
+2025-05-22 13:17:38,974 - Kanshi - DEBUG - [GRS_19] Future slot (17:40): blank
+2025-05-22 13:17:38,974 - Kanshi - DEBUG - [GRS_19] Future slot (17:45): blank
+2025-05-22 13:17:38,975 - Kanshi - DEBUG - [GRS_19] Future slot (17:50): blank
+2025-05-22 13:17:38,975 - Kanshi - DEBUG - [GRS_19] Future slot (17:55): blank
+2025-05-22 13:17:38,976 - Kanshi - DEBUG - [GRS_19] Final timeline length: 144
+2025-05-22 13:17:38,978 - werkzeug - INFO - 192.9.200.200 - - [22/May/2025 13:17:38] "GET /update_conditions HTTP/1.1" 200 -

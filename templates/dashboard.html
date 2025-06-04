@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>稼働状況</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="dashboard-header">
+        <h1>研磨室稼働状況</h1>
+            <div class="header-controls">
+                <a href="/history" class="history-link"><i class="fas fa-history"></i> 履歴</a>
+                <div class="datetime-display">
+                <div id="current-date">Loading...</div>
+                <div id="current-time">Loading...</div>
+                </div>
+            </div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+{% set status_map = {
+    'ON': '加工中',
+    'OFF': '停止',
+    'PREP': '準備中',
+    'UNKNOWN': '不明'
+} %}
+
+    <div class="machine-grid">
+        {% for machine in ['GRS_14', 'GRS_17', 'GRS_19'] %}
+        <div class="machine-card" id="{{ machine }}-card">
+            <div class="status-container">
+                <div class="machine-header">
+                    <h2 class="machine-title">{{ machine }}</h2>
+                    <div class="machine-status status-{{ machine_conditions.get(machine, 'unknown').lower() }}">
+                         {{ status_map.get(machine_conditions.get(machine, 'UNKNOWN'), '不明') }}
+                    </div>
+                </div>
+
+                <div class="timers-container">
+                    <div class="timer-row">
+                        <span class="timer-label">停止時間:</span>
+                        <span class="timer-value" id="{{ machine }}-off-time">00:00:00</span>
+                    </div>
+                    <div class="timer-row">
+                        <span class="timer-label">準備時間:</span>
+                        <span class="timer-value" id="{{ machine }}-prep-time">00:00:00</span>
+                    </div>
+                    <div class="timer-row">
+                        <span class="timer-label">加工時間:</span>
+                        <span class="timer-value" id="{{ machine }}-on-time">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-header">
+                    <span style="left: -15px;">06:00</span>
+                    <span style="left: calc(100% * 8.33 / 100);">07:00</span>
+                    <span style="left: calc(100% * 16.67 / 100);">08:00</span>
+                    <span style="left: calc(100% / 4);">09:00</span>
+                    <span style="left: calc(100% * 33.32 / 100);">10:00</span>
+                    <span style="left: calc(100% * 41.67 / 100);">11:00</span>
+                    <span style="left: calc(100% / 2);">12:00</span>
+                    <span style="left: calc(100% * 58.33 / 100);">13:00</span>
+                    <span style="left: calc(100% * 66.67 / 100);">14:00</span>
+                    <span style="left: calc(100% / 4*3);">15:00</span>
+                    <span style="left: calc(100% * 83.33 / 100);">16:00</span>
+                    <span style="left: calc(100% * 91.67 / 100);">17:00</span>
+                    <span style="right: 0;">18:00</span>
+                </div>
+                <div class="timeline-bar" id="{{ machine }}-timeline"></div>
+                <div class="time-markers">
+                    <span id="{{ machine }}-current-time"></span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>    
+</body>
+</html>

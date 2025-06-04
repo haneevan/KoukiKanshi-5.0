@@ -1,0 +1,399 @@
+:root {
+    --color-off: #d9534f;
+    --color-prep: #f0ad4e;
+    --color-on: #5cb85c;
+    --color-unknown: #777;
+    --color-bg-dark: #333;
+    --color-bg-light: #eee;
+    --color-timeline-on: #5cb85c;
+    --color-timeline-prep: #f0ad4e;
+    --color-timeline-off: #d9534f;
+    --color-timeline-inactive: #ddd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.datetime-display {
+    text-align: right;
+}
+
+.datetime-display div {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+#current-date {
+    font-weight: bold;
+}
+
+#current-time {
+    font-weight: bold;
+}
+
+.machine-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.machine-card {
+    display: flex;
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.status-container {
+    flex: 0;
+    min-width: 200px;
+    position: relative;
+    padding: 20px;
+}
+
+.machine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.machine-title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+.machine-status {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status-off {
+    color: var(--color-off);
+}
+
+.status-prep {
+    color: var(--color-prep);
+}
+
+.status-on {
+    color: var(--color-on);
+}
+
+.status-unknown {
+    color: var(--color-unknown);
+}
+
+.timers-container {
+    margin: 15px 0;
+}
+
+.timer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.timer-label {
+    color: #bbb;
+    text-align: left;
+}
+
+.timer-value {
+    font-weight: bold;
+    text-align: right;
+}
+
+.active-timer {
+    color: yellow !important;
+}
+
+.active-server-tracked {
+    color: yellow;
+    /* Or any other yellow variation */
+}
+
+.timeline {
+    display: flex;
+    /*use flexbos for layout */
+    flex-direction: column;
+    /* Arrange items in a column */
+    /* width: 20px; //optional */
+    gap: 2px;
+    margin-top: 1rem;
+    /* height: 600px; //optional */
+    overflow-y: auto;
+    border-left: 1px solid #3e5e7e;
+    padding-left: 0.5rem;
+}
+
+.timeline-container {
+    /* display: flex;
+    flex-direction: row; */
+
+    flex: 1;
+    min-width: 0;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 5%;
+}
+
+.timeline-header {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #bbb;
+    padding: 0 5px;
+}
+
+.timeline-header span {
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.timeline-header span:first-child {
+    left: 0;
+    transform: translateX(0);
+}
+
+.timeline-header span:last-child {
+    right: 0;
+    transform: translateX(50%);
+}
+
+.timeline-bar {
+    display: grid;
+    grid-template-columns: repeat(144, 1fr);
+    gap: 1px;
+    height: 25px;
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.timeline-block {
+    height: 100%;
+    transition: background-color 0.3s;
+}
+
+.timeline-item {
+    width: 10px;
+    border-radius: 2px;
+}
+
+.timeline-item.on {
+    background-color: #16a34a;
+}
+
+.timeline-item.off {
+    background-color: #dc2626;
+}
+
+.timeline-item.prep {
+    background-color: #f59e0b;
+}
+
+.timeline-item.unknown {
+    background-color: #f0f0f0;
+    /*light gray for unknown */
+    /* or
+    background^color: transparent;
+    for no background */
+}
+
+.time-labels {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* width: 4rem; */
+    margin-top: 1rem;
+    /* padding-top: 1.5rem; */
+    /* padding to align with the first time label */
+    margin-left: 0.5rem;
+}
+
+.time-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-align: left;
+    /* Align text to the left */
+    height: 20px;
+    /* Ensure each time label has the same height as a timeline item */
+    line-height: 20px;
+    /* Vertically center the text */
+}
+
+.block-off {
+    background-color: var(--color-timeline-off);
+}
+
+.block-prep {
+    background-color: var(--color-timeline-prep);
+}
+
+.block-on {
+    background-color: var(--color-timeline-on);
+}
+
+.block-inactive {
+    background-color: var(--color-timeline-inactive);
+    opacity: 0.3;
+}
+
+@keyframes breathe {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+.block-current {
+    animation: breathe 2s ease-in-out infinite;
+}
+
+.block-off.block-current {
+    background-color: var(--color-timeline-off);
+}
+
+.block-prep.block-current {
+    background-color: var(--color-timeline-prep);
+}
+
+.block-on.block-current {
+    background-color: var(--color-timeline-on);
+}
+
+.block-inactive.block-current {
+    background-color: var(--color-timeline-inactive);
+}
+
+.time-markers {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-size: 0.7rem;
+    color: #777;
+}
+
+.current-time {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.flash-messages {
+    margin: 15px 0;
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+/* Header controls and history link */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: var(--color-bg-dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.history-link i {
+    margin-right: 8px;
+}
+
+.history-link:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .machine-card {
+        flex-direction: column;
+    }
+
+    .status-container {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .timeline-container {
+        margin-left: 0;
+    }
+}
+
+@keyframes breathe {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+.block-current {
+    animation: breathe 2s ease-in-out infinite;
+}
+
+.block-off.block-current {
+    background-color: var(--color-timeline-off);
+}
+
+.block-prep.block-current {
+    background-color: var(--color-timeline-prep);
+}
+
+.block-on.block-current {
+    background-color: var(--color-timeline-on);
+}
+
+.block-inactive.block-current {
+    background-color: var(--color-timeline-inactive);
+}

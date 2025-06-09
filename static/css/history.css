@@ -151,6 +151,22 @@ h2 {
     color: #bbb;
 }
 
+.timeline-header span {
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.timeline-header span:first-child {
+    left: 0;
+    transform: translateX(0);
+}
+
+.timeline-header span:last-child {
+    right: 0;
+    transform: translateX(50%);
+}
+
 .timeline-bar {
     display: grid;
     grid-template-columns: repeat(144, 1fr);
@@ -176,6 +192,10 @@ h2 {
 
 .block-off {
     background-color: var(--color-timeline-off);
+}
+
+.block-unknown {
+    background-color: var(--color-timeline-prep);  /* Use the same orange color as prep */
 }
 
 .block-inactive {
